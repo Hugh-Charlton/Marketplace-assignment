@@ -1,0 +1,9 @@
+<%#= navigational links %>
+<%= link_to "Home", "/pages/home" %>
+<%= link_to "Marketplace", "/listings/index" %>
+<%= link_to "Contact Us", "/pages/Contact" %>
+
+<h1>Make a Listing</h1>
+
+<%#= calling form partial %>
+<%= render "form", listing: @listing %>

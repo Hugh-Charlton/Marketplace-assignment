@@ -1,0 +1,37 @@
+<%#= display error messages to user %>
+
+<% if @listing.errors.any? %>
+    <% @listing.errors.full_messages.each do |error| %>
+        <p> <%= error_message %> </p>
+    <% end %>
+<% end %>
+
+<%#= form_with model for URL and scope, scope needed to point to hash for variables. %>
+<%#= local:true is used to disable javescript submission %>
+
+<%= form_with(model: @lisitng, local:true) do |form| %>
+
+    <%#= Title field for form validates client side, titles are required for site functionality %>
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title, required: true %>
+    </div>
+
+    <%#= Description field %>
+    <div>
+        <%= form.label :description %><br>
+        <%= form.text_area :description %>
+    </div>
+
+    <%#= Cost field, minimum value of 0 to prevent items being listed where the buyer would recieve money %>
+    <div>
+        <%= form.label :cost %><br>
+        <%= form.number_field :cost, min:0 %>
+    </div>
+
+    <br>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>

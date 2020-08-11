@@ -1,0 +1,10 @@
+<h1> Registration </h1>
+
+<%#= A form to collect user information for an account %>
+
+<%= simple_form_for(model: @user, local:true) do |form| %>
+    <%= form.input :username %>
+    <%= form.input :email %>
+    <%= form.input :password %>
+    <%= form.submit "Register" %>
+<% end %>

@@ -1,0 +1,19 @@
+current directory: /home/hughcharlton/mnt/c/Projects/flextrack/sewings/gems/ruby/2.7.0/gems/bcrypt-3.1.15/ext/mri
+/home/hughcharlton/.rbenv/versions/2.7.0/bin/ruby -I /home/hughcharlton/.rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20200804-15277-m6fxsg.rb extconf.rb
+creating Makefile
+
+current directory: /home/hughcharlton/mnt/c/Projects/flextrack/sewings/gems/ruby/2.7.0/gems/bcrypt-3.1.15/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/hughcharlton/mnt/c/Projects/flextrack/sewings/gems/ruby/2.7.0/gems/bcrypt-3.1.15/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+gcc  -D__SKIP_GNU -I/home/hughcharlton/.rbenv/versions/2.7.0/include     -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/hughcharlton/mnt/c/Projects/flextrack/sewings/gems/ruby/2.7.0/gems/bcrypt-3.1.15/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20200804-15277-16z8b5l

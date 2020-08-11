@@ -1,0 +1,21 @@
+<%#= navigational links %>
+<%= link_to "Home", "/pages/home" %>
+<%= link_to "Marketplace", "/listings/index" %>
+<%= link_to "Contact Us", "/pages/Contact" %>
+
+<%#=  %>
+<h1><%= @user.username %><h1>
+
+<p><%= profile.bio %></p>
+
+<% @listing_user.each do |listing| %>
+
+    <p><%= listing.description %></p>
+    <p><%= listing.cost %></p>
+
+<%= end %>
+
+
+<br>
+
+<p><%= link_to "edit", edit_listing_path(listing.id) %></p>

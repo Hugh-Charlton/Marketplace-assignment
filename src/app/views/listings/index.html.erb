@@ -1,0 +1,24 @@
+<%#= navigational links %>
+<%= link_to "Home", "/pages/home" %>
+<%= link_to "Marketplace", "/listings/index" %>
+<%= link_to "Contact Us", "/pages/Contact" %>
+
+<h1> Marketplace </h1>
+
+<%= link_to "Make a Listing", "/listings/new" %>
+
+<% @listings.each do |listing| %>
+
+    <div>
+        <p><%= listing.title %></p>
+        <p><%= listing.description %></p>
+        <p><%= listing.cost %></p>
+        <%#= listing.id points to specific listing so that linked pages know what information to access from the database %>
+        <p><%= link_to "edit", edit_listing_path(listing.id) %></p>
+        <p><%= link_to "show", show_listing_path(listing.id) %></p>
+        
+        <%#= link to destroy record from database with a confirmation message %>
+        <p><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    </div>
+
+<% end %>
