@@ -3,6 +3,9 @@
 #### Trello:
 https://trello.com/b/0GLcO0Sq/market-place-assignment
 
+Git Repo
+https://github.com/Hugh-Charlton/Marketplace-assignment
+
 The original concept for Sewings was a store front for users to buy and sell patterns.  I wanted this site focus on smaller scale trading were products sold were produced by an individuals hobby or potentially a small business.  I wanted to try and push out any large scale compedative manufacturers.
 
 Outside of functioning as a marketplace that specialises in sewing patterns I wanted my site to contain the following features:
